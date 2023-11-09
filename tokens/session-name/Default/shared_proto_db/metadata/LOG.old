@@ -1,2 +1,3 @@
-2023/11/09-00:59:34.580 9403 Creating DB /Users/gustavohenrique/Library/Mobile Documents/com~apple~CloudDocs/Gustavo/STUDY/A PARTE/CobraZap/CobraZap/tokens/session-name/Default/shared_proto_db/metadata since it was missing.
-2023/11/09-00:59:34.597 9403 Reusing MANIFEST /Users/gustavohenrique/Library/Mobile Documents/com~apple~CloudDocs/Gustavo/STUDY/A PARTE/CobraZap/CobraZap/tokens/session-name/Default/shared_proto_db/metadata/MANIFEST-000001
+2023/11/09-01:25:04.266 a403 Reusing MANIFEST /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/shared_proto_db/metadata/MANIFEST-000001
+2023/11/09-01:25:04.266 a403 Recovering log #3
+2023/11/09-01:25:04.266 a403 Reusing old log /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/shared_proto_db/metadata/000003.log 

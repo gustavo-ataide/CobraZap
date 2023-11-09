@@ -8,7 +8,7 @@ venom
     multidevice: false // for version not multidevice use false.(default: true)
   })
   .then((client) => {
-    start(client), client.sendText('83996575302@c.us', 'flores')
+    start(client), client.sendText('83996575302@c.us', 'Pomba 8==>')
     })
   .catch((erro) => {
     console.log(erro);
