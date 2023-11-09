@@ -3,6 +3,9 @@ import json
 import datetime
 from funcoes import conectar, consultar_table, tratar_dados
 
+
+from subprocess import run, PIPE
+
 # Configurar a conexão
 db_connection = conectar()
 
@@ -23,4 +26,12 @@ data_cobranca_dict = data_cobranca.to_dict(orient='records')
 # Criar um arquivo JSON a partir do dicionário
 with open('data_cobranca.json', 'w') as json_file:
     json.dump(data_cobranca_dict, json_file, indent=4)
+
+
+#chamando autobots
+run(["node", "index.js"])
+
+
+#pandas 
+#mysql-connector-python
 
