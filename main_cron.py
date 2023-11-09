@@ -2,7 +2,6 @@ from subprocess import run, PIPE
 run(["pip3", "install","crontab"])
 from crontab import CronTab
 
-
 run(["pip3", "install","pandas"])
 run(["pip3", "install","mysql-connector-python"])
 

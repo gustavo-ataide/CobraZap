@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "sharp": "^0.32.6",
+    "venom-bot": "^5.0.21"
+  }
+}

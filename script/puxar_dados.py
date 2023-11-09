@@ -2,8 +2,6 @@ import pandas as pd
 import json
 import datetime
 from funcoes import conectar, consultar_table, tratar_dados
-
-
 from subprocess import run, PIPE
 
 # Configurar a conexão
@@ -29,9 +27,7 @@ with open('data_cobranca.json', 'w') as json_file:
 
 
 #chamando autobots
-run(["node", "index.js"])
+run(["node", "./script/index.js"])
 
 
-#pandas 
-#mysql-connector-python
 
