@@ -27,7 +27,7 @@ with open('data_cobranca.json', 'w') as json_file:
 
 
 #chamando autobots
-run(["node", "./index.js"])
+run(["node", "./script/index.js"])
 
 
 
