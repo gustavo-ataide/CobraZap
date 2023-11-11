@@ -5,7 +5,7 @@ from crontab import CronTab
 run(["pip3", "install","pandas"])
 run(["pip3", "install","mysql-connector-python"])
 
-
+# npm install --ignore-scripts=false --foreground-scripts --verbose sharp
 
 cron = CronTab(user='root') 
 

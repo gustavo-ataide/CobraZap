@@ -8,6 +8,11 @@ venom
     multidevice: false // for version not multidevice use false.(default: true)
   })
   .then((client) => {
+    // abrir o data_cobranca como uma lista de maps [["nome", "celular","CadUser"], ["nome", "celular","CadUser"]]
+    for (let i = 0; i < coisa.lenght(); i++)
+      let numeroTratado = coisa[i].celular;
+
+    start(client), client.sendText(`${numeroTratado}@c.us`, 'Pomba 8==>')
     })
   .catch((erro) => {
     console.log(erro);
