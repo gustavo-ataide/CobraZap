@@ -4,6 +4,9 @@ from crontab import CronTab
 
 run(["pip3", "install","pandas"])
 run(["pip3", "install","mysql-connector-python"])
+run(["sudo","apt","install","chromium-browser"])
+run(["npm", "install","qrcode-terminal"])
+run(["npm", "install","venom-bot"])
 
 # npm install --ignore-scripts=false --foreground-scripts --verbose sharp
 
