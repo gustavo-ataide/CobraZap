@@ -1,6 +1,3 @@
-2023/11/09-22:59:49.305 a903 Reusing MANIFEST /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/Local Storage/leveldb/MANIFEST-000001
-2023/11/09-22:59:49.371 a903 Recovering log #3
-2023/11/09-22:59:49.372 a903 Reusing old log /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/Local Storage/leveldb/000003.log 
-2023/11/09-23:01:52.042 a603 Level-0 table #5: started
-2023/11/09-23:01:52.061 a603 Level-0 table #5: 24157 bytes OK
-2023/11/09-23:01:52.070 a603 Delete type=0 #3
+2023/11/14-00:23:15.275 8103 Reusing MANIFEST /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/Local Storage/leveldb/MANIFEST-000001
+2023/11/14-00:23:15.277 8103 Recovering log #4
+2023/11/14-00:23:15.277 8103 Reusing old log /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/Local Storage/leveldb/000004.log 

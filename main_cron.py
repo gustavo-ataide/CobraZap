@@ -8,8 +8,6 @@ run(["sudo","apt","install","chromium-browser"])
 run(["npm", "install","qrcode-terminal"])
 run(["npm", "install","venom-bot"])
 
-# npm install --ignore-scripts=false --foreground-scripts --verbose sharp
-
 cron = CronTab(user='root') 
 
 job = cron.new(command='python3 CobraZap/script/puxar_dados.py')
