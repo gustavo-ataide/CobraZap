@@ -1,12 +1,12 @@
 // Supports ES6
 // import { create, Whatsapp } from 'venom-bot';
-const venom = require('venom-bot');
+//const venom = require('venom-bot');
 
 const fs = require('fs');
 
 // Caminho para o arquivo JSON
 const caminhoArquivo = 'data_cobranca.json';
-let dados_cobranca;
+var dados_cobranca = 0;
 
 // Lê o conteúdo do arquivo
 fs.readFile(caminhoArquivo, 'utf8', (err, data) => {
@@ -14,19 +14,31 @@ fs.readFile(caminhoArquivo, 'utf8', (err, data) => {
     console.error('Erro ao ler o arquivo:', err);
     return;
   }
-
+  x = 1;
   try {
     // Converte o conteúdo para um objeto JavaScript
-    const dados = JSON.parse(data);
+     const dados = JSON.parse(data);
 
-    dados_cobranca = dados;
+      dados_cobranca = dados;
 
     // Teste, apagar depois
-      console.log('Conteúdo do arquivo JSON:', dados);
+      //console.log('Conteúdo do arquivo JSON:', dados);
 
-      console.log(typeof dados);
+      //console.log(typeof dados);
 
       console.log(dados[0].nome);
+
+      console.log(dados_cobranca[0].nome);
+
+      let tamanho_dados = Object.keys(dados_cobranca).length;
+
+      for (let i = 0; i < tamanho_dados; i++){
+        let numeroTratado = dados[i].celular;
+        if(numeroTratado == ""){
+          console.log("Sem numero");
+        }
+        console.log(numeroTratado);
+      }
 
 
   } catch (parseError) {
@@ -34,6 +46,11 @@ fs.readFile(caminhoArquivo, 'utf8', (err, data) => {
   }
 });
 
+
+
+
+
+/*
 venom
   .create({
     session: 'session-name', //name of session
@@ -68,3 +85,4 @@ function start(client) {
     }
   });
 }
+*/
