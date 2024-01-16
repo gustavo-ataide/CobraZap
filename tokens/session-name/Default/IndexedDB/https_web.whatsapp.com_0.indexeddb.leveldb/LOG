@@ -1,9 +1,0 @@
-2023/11/14-00:23:16.385 8103 Reusing MANIFEST /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/11/14-00:23:16.386 8103 Recovering log #960
-2023/11/14-00:23:16.451 8103 Reusing old log /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000960.log 
-2023/11/14-00:24:43.424 8103 Compacting 1@1 + 1@2 files
-2023/11/14-00:24:43.471 8103 Generated table #964@1: 19106 keys, 810842 bytes
-2023/11/14-00:24:43.471 8103 Compacted 1@1 + 1@2 files => 810842 bytes
-2023/11/14-00:24:43.482 8103 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/11/14-00:24:43.483 8103 Delete type=2 #922
-2023/11/14-00:24:43.483 8103 Delete type=2 #962

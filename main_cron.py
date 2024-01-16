@@ -4,7 +4,7 @@ from crontab import CronTab
 
 run(["pip3", "install","pandas"])
 run(["pip3", "install","mysql-connector-python"])
-run(["sudo","apt","install","chromium-browser"])
+#run(["sudo","apt","install","chromium-browser"])
 run(["npm", "install","qrcode-terminal"])
 run(["npm", "install","venom-bot"])
 

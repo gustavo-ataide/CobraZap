@@ -1,3 +1,3 @@
-2023/11/14-00:23:15.275 8103 Reusing MANIFEST /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/Local Storage/leveldb/MANIFEST-000001
-2023/11/14-00:23:15.277 8103 Recovering log #4
-2023/11/14-00:23:15.277 8103 Reusing old log /Users/gustavohenrique/Desktop/CobraZap/tokens/session-name/Default/Local Storage/leveldb/000004.log 
+2024/01/16-11:33:13.615 dd4 Reusing MANIFEST c:\Users\fezis\OneDrive\Área de Trabalho\Projetos\CobraZap\tokens\session-name\Default\Local Storage\leveldb/MANIFEST-000001
+2024/01/16-11:33:13.618 dd4 Recovering log #3
+2024/01/16-11:33:13.619 dd4 Reusing old log c:\Users\fezis\OneDrive\Área de Trabalho\Projetos\CobraZap\tokens\session-name\Default\Local Storage\leveldb/000003.log 

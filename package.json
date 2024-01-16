@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "qrcode-terminal": "^0.12.0",
     "sharp": "^0.32.6",
     "venom-bot": "^5.0.21"
   }
