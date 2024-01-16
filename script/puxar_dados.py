@@ -22,12 +22,12 @@ data_cobranca.drop("data_premio", axis=1, inplace=True)
 data_cobranca_dict = data_cobranca.to_dict(orient='records')
 
 # Criar um arquivo JSON a partir do dicionário
-with open('data_cobranca.json', 'w') as json_file:
+with open('script/data_cobranca.json', 'w') as json_file:
     json.dump(data_cobranca_dict, json_file, indent=4)
 
 
-# #chamando autobots
-# run(["node", "./script/index.js"])
+#chamando autobots
+run(["node", "./script/index.js"])
 
 
 
