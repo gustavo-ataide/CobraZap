@@ -14,7 +14,8 @@ venom
       .then(numeros => {
         let mensagem = 'Pomba 8==>';
         for (let i = 0; i < numeros.length; i++){
-          client.sendText(`${numeros[i]}@c.us`, mensagem);
+          // client.sendText(`${numeros[i]}@c.us`, mensagem);
+          client.sendText(`5583996575302@c.us`, mensagem);
         }
       })
       .catch(err => console.error(err));

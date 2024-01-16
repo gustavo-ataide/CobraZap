@@ -3,20 +3,20 @@ import mysql.connector
 import pandas as pd
 from datetime import datetime, timedelta
 
-def formata_data(coluna):
-    for i in range(len(coluna)):
-        coluna[i] = datetime.fromtimestamp(int(coluna[i]))
-    return coluna
+def data_format(row):
+    for i in range(len(row)):
+        row[i] = datetime.fromtimestamp(int(row[i]))
+    return row
 
-def formata_num(coluna):
-    for i in range(len(coluna)):
-        if len(coluna[i]) != 0:
-            coluna[i] = '55'+coluna[i]
-            coluna[i] = coluna[i].replace('(', '')
-            coluna[i] = coluna[i].replace(')','')
-            coluna[i] = coluna[i].replace(' ','')
-            coluna[i] = coluna[i].replace('-','')
-    return coluna
+def formata_num(row):
+    for i in range(len(row)):
+        if len(row[i]) != 0:
+            row[i] = '55'+row[i]
+            row[i] = row[i].replace('(', '')
+            row[i] = row[i].replace(')','')
+            row[i] = row[i].replace(' ','')
+            row[i] = row[i].replace('-','')
+    return row
 
 def conectar():
     db_connection = mysql.connector.connect(
@@ -45,24 +45,24 @@ def consultar_table(db_connection):
 
 def tratar_dados(df):
     data = df[['nome', 'data_premio', 'celular', 'CadUser']].copy()
-    data['data_premio'] = formata_data(data['data_premio'])
+    data['data_premio'] = data_format(data['data_premio'])
     
     #formatar numeros
     data['celular'] = formata_num(data['celular'])
 
     # Suponha que 'data' seja o seu DataFrame
-    # Convertendo a coluna 'data_premio' para o formato datetime
+    # Convertendo a row 'data_premio' para o formato datetime
     data['data_premio'] = pd.to_datetime(data['data_premio'])
     print(data['data_premio'])
 
     # Calculando a data daqui a 5 dias a partir de hoje
     hoje = datetime.now()
-    data_debtor_threshold = hoje + timedelta(days=1)
+    data_debtor_threshold = hoje + timedelta(days=5)
 
-    # Aplicando o filtro para criar a nova coluna 'data_debtor'
+    # Aplicando o filtro para criar a nova row 'data_debtor'
     data['data_debtor'] = data[(data['data_premio'] >= hoje) & (data['data_premio'] < data_debtor_threshold)]['data_premio']
 
-    # Exibindo o DataFrame com a nova coluna 'data_debtor'
+    # Exibindo o DataFrame com a nova row 'data_debtor'
     data_cobranca = data.dropna(subset=['data_debtor'])
 
     # Exibindo o novo DataFrame

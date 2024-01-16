@@ -26,8 +26,8 @@ with open('data_cobranca.json', 'w') as json_file:
     json.dump(data_cobranca_dict, json_file, indent=4)
 
 
-#chamando autobots
-run(["node", "./script/index.js"])
+# #chamando autobots
+# run(["node", "./script/index.js"])
 
 
 
